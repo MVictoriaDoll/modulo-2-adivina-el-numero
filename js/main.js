@@ -7,7 +7,7 @@ const btn = document.querySelector ('.js__button');
 const clue = document.querySelector ('.js__clueForUser');
 const attempts = document.querySelector ('.js__userAttempts');
 const randomNumber = getRandomNumber(100);
-let attemptsuser = 0;
+let attemptssuser = 0;
 
 
 // funciones
@@ -51,7 +51,9 @@ function changefirstp () {
 
 
 function changesecondp () {
-    
+    attemptssuser++;
+    attempts.innerHTML = `Numero de intentos: ${attemptssuser}`;
+
 }
 
 

@@ -9,6 +9,7 @@ const attempts = document.querySelector ('.js__userAttempts');
 const randomNumber = getRandomNumber(100);
 let attemptssuser = 0;
 
+console.log(`numero aleatorio: ${randomNumber}`);
 
 // funciones
 
@@ -32,14 +33,16 @@ function changefirstp () {
     console.log(input.value) 
     const userGuess = parseInt(input.value);
 
-    if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+    if (userGuess < 1 || userGuess > 100) {
+        clue.innerHTML = 'El numero debe estar entre 1 y 100';
+    } else if (isNaN(userGuess)) {
         clue.innerHTML = 'Introduce un numero valido';
     } else if ( userGuess < randomNumber ) {
         clue.innerHTML = 'Demasiado bajo';
     } else if ( userGuess > randomNumber) {
-        clue.innerHTML = 'demasiado alto'
+        clue.innerHTML = 'demasiado alto';
     } else  {
-        clue.innerHTML = 'Has ganado campeona!'
+        clue.innerHTML = 'Has ganado campeona!';
     }
 
 

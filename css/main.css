@@ -1,0 +1,18 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.clue {
+    border: 1px solid ;
+    border-color: grey;
+    margin-block: 10px;
+}
+
+.attempts {
+    border: 1px solid ;
+    border-color: grey;
+    margin-block: 10px
+}

@@ -9,7 +9,7 @@ const attempts = document.querySelector ('.js__userAttempts');
 const randomNumber = getRandomNumber(100);
 let attemptssuser = 0;
 
-console.log(`numero aleatorio: ${randomNumber}`);
+console.log(`número aleatorio: ${randomNumber}`);
 
 // funciones
 
@@ -34,9 +34,9 @@ function changefirstp () {
     const userGuess = parseInt(input.value);
 
     if (userGuess < 1 || userGuess > 100) {
-        clue.innerHTML = 'El numero debe estar entre 1 y 100';
+        clue.innerHTML = 'El número debe estar entre 1 y 100';
     } else if (isNaN(userGuess)) {
-        clue.innerHTML = 'Introduce un numero valido';
+        clue.innerHTML = 'Introduce un número válido';
     } else if ( userGuess < randomNumber ) {
         clue.innerHTML = 'Demasiado bajo';
     } else if ( userGuess > randomNumber) {
